@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "id": "q-optima",
+      "title": "Q-Optima",
+      "summary": "SaaS Platform for Resource Optimization",
+      "description": "A comprehensive SaaS platform built to handle complex resource allocation and optimization. Features multi-tenant architecture, real-time data processing, and an intuitive minimal UI for high-level data visualization.",
+      "architecture": "Built com arquitetura de microserviços usando NestJS, Redis para caching, PostgreSQL para armazenamento, e Next.js no frontend para a melhor performance e SEO.",
+      "tags": ["Next.js", "NestJS", "PostgreSQL", "Redis"],
+      "image": "/q-optima.jpg",
+      "colSpan": "col-span-1 md:col-span-2 row-span-2",
+      "demoUrl": "https://example.com",
+      "repoUrl": "https://github.com"
+    },
+    {
+      "id": "iot-telemetry",
+      "title": "IoT Telemetry System",
+      "summary": "Monitoramento de hardware em tempo real",
+      "description": "Sistema distribuído de telemetria coletando métricas em tempo real de centenas de dispositivos ESP32 e Arduino. Focado em baixíssima latência e um dashboard agressivo e moderno para operadores.",
+      "architecture": "Arquitetura orientada a eventos utilizando broker MQTT, workers em Node.js, InfluxDB para séries temporais e WebSockets para atualizações UI ao vivo.",
+      "tags": ["IoT", "C++", "MQTT", "Node.js"],
+      "image": "/iot.jpg",
+      "colSpan": "col-span-1 md:col-span-1 row-span-1",
+      "repoUrl": "https://github.com"
+    },
+    {
+      "id": "webar-exp",
+      "title": "WebAR Experiences",
+      "summary": "Realidade Aumentada direto no navegador",
+      "description": "Plataforma web experimental focada em entregar experiências 3D e AR de alta fidelidade diretamente no browser sem instalação de aplicativos. Foco em materiais metálicos, iluminação avançada e aspecto cinematográfico.",
+      "architecture": "Aproveita WebGL, Three.js e a API WebXR com um pipeline de renderização customizado, otimizado para navegadores mobile.",
+      "tags": ["Three.js", "WebGL", "WebXR"],
+      "image": "/webar.jpg",
+      "colSpan": "col-span-1 md:col-span-1 row-span-1",
+      "demoUrl": "https://example.com"
+    }
+  ]
+}
