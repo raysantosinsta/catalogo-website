@@ -13,7 +13,8 @@ type Project = {
   description: string;
   architecture: string;
   tags: string[];
-  image: string;
+  image?: string;
+  video?: string;
   colSpan: string;
   demoUrl?: string;
   repoUrl?: string;
@@ -51,16 +52,27 @@ export default function Home() {
               transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
               onClick={() => setSelectedProject(project)}
             >
-              {/* Image Background */}
+              {/* Media Background */}
               <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover object-center"
-                  priority={index === 0}
-                />
+                {project.video ? (
+                  <video
+                    src={project.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover object-center w-full h-full"
+                  />
+                ) : project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-center"
+                    priority={index === 0}
+                  />
+                ) : null}
               </div>
               
               {/* Overlay (Hover Effect) */}

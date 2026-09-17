@@ -1,38 +1,86 @@
 {
   "projects": [
+
     {
-      "id": "q-optima",
-      "title": "Q-Optima",
-      "summary": "SaaS Platform for Resource Optimization",
-      "description": "A comprehensive SaaS platform built to handle complex resource allocation and optimization. Features multi-tenant architecture, real-time data processing, and an intuitive minimal UI for high-level data visualization.",
-      "architecture": "Built com arquitetura de microserviços usando NestJS, Redis para caching, PostgreSQL para armazenamento, e Next.js no frontend para a melhor performance e SEO.",
-      "tags": ["Next.js", "NestJS", "PostgreSQL", "Redis"],
-      "image": "/q-optima.jpg",
-      "colSpan": "col-span-1 md:col-span-2 row-span-2",
-      "demoUrl": "https://example.com",
-      "repoUrl": "https://github.com"
+      "id": "numa-bomba-insulina-inteligente",
+      "title": "Numa",
+      "summary": "Bomba de insulina inteligente para o cuidado com a diabetes",
+      "description": "Landing page moderna para a Numa, uma bomba de insulina inteligente criada para ajudar pessoas com diabetes a controlar a aplicação de insulina com mais conforto, liberdade e menos monitoramento diário.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de entrada, rolagem, fixação de seções e transições são implementadas com GSAP, ScrollTrigger e @gsap/react. A interface também utiliza Lucide React para os ícones.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP",
+        "ScrollTrigger",
+        "Lucide React"
+      ],
+      "video": "/numa.mp4",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://numa-roan.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/numa"
     },
     {
-      "id": "iot-telemetry",
-      "title": "IoT Telemetry System",
-      "summary": "Monitoramento de hardware em tempo real",
-      "description": "Sistema distribuído de telemetria coletando métricas em tempo real de centenas de dispositivos ESP32 e Arduino. Focado em baixíssima latência e um dashboard agressivo e moderno para operadores.",
-      "architecture": "Arquitetura orientada a eventos utilizando broker MQTT, workers em Node.js, InfluxDB para séries temporais e WebSockets para atualizações UI ao vivo.",
-      "tags": ["IoT", "C++", "MQTT", "Node.js"],
-      "image": "/iot.jpg",
-      "colSpan": "col-span-1 md:col-span-1 row-span-1",
-      "repoUrl": "https://github.com"
-    },
-    {
-      "id": "webar-exp",
-      "title": "WebAR Experiences",
-      "summary": "Realidade Aumentada direto no navegador",
-      "description": "Plataforma web experimental focada em entregar experiências 3D e AR de alta fidelidade diretamente no browser sem instalação de aplicativos. Foco em materiais metálicos, iluminação avançada e aspecto cinematográfico.",
-      "architecture": "Aproveita WebGL, Three.js e a API WebXR com um pipeline de renderização customizado, otimizado para navegadores mobile.",
-      "tags": ["Three.js", "WebGL", "WebXR"],
-      "image": "/webar.jpg",
-      "colSpan": "col-span-1 md:col-span-1 row-span-1",
-      "demoUrl": "https://example.com"
-    }
+  "id": "yasmine-dantas-doceria",
+  "title": "Yasmine Dantas Doceria",
+  "summary": "Adoçando momentos inesquecíveis. Faça seu pedido pelo WhatsApp.",
+  "description": "Landing page moderna e elegante para a Yasmine Dantas Doceria, desenvolvida para apresentar os doces artesanais, destacar produtos, exibir depoimentos de clientes e integrar o catálogo ao WhatsApp para facilitar os pedidos, contando com um carrinho de compras flutuante.",
+  "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O gerenciamento de estado do carrinho é feito com Zustand, e as animações de interface e interações são implementadas com Framer Motion. A interface também utiliza Lucide React para a iconografia e fontes otimizadas (Inter e Playfair Display).",
+  "tags": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Zustand",
+    "Lucide React"
+  ],
+  "video": "/doce.webm",
+  "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1"
+,
+  "demoUrl": "https://doces-tau.vercel.app/",
+  "repoUrl": "https://github.com/raysantosinsta/doces"
+},
+{
+  "id": "imovel-new",
+  "title": "Imóvel New",
+  "summary": "Plataforma moderna com animações fluidas para o mercado imobiliário.",
+  "description": "Uma landing page imersiva para o setor imobiliário, focada em apresentar as propriedades com animações avançadas e uma navegação de alto desempenho. O projeto entrega uma experiência visual premium para conectar os clientes aos melhores imóveis de forma interativa.",
+  "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de interface e interações complexas de rolagem foram criadas usando a biblioteca GSAP em conjunto com @gsap/react para garantir alta performance e fluidez.",
+  "tags": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "GSAP"
+  ],
+  "video": "/imovel.webm",
+  "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+  "demoUrl": "https://imovel-new.vercel.app",
+  "repoUrl": "https://github.com/raysantosinsta/imovel-new"
+},
+{
+  "id": "clinica-veterinaria",
+  "title": "Clínica Veterinária",
+  "summary": "Plataforma moderna e interativa para serviços veterinários, destacando o cuidado e amor aos pets.",
+  "description": "Uma landing page imersiva para uma clínica veterinária (Golden Pet), focada em apresentar a infraestrutura, serviços e avaliações dos clientes com navegação fluida e animações de alta performance.",
+  "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O projeto conta com animações avançadas utilizando GSAP e Framer Motion, além de incorporar elementos 3D imersivos com Three.js e React Three Fiber.",
+  "tags": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "GSAP",
+    "Framer Motion",
+    "Three.js"
+  ],
+  "video": "/veterinario.webm",
+  "colSpan": "col-span-1 md:col-span-1 lg:col-span-2 row-span-1",
+  "demoUrl": "https://clinica-veterinaria.vercel.app",
+  "repoUrl": "https://github.com/raysantosinsta/clinica-veterinaria"
+}
+
+
   ]
 }
