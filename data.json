@@ -6,7 +6,12 @@
       "summary": "Estratégia visual para aumento de conversão em Black Friday.",
       "description": "Nesta campanha, reformulamos a identidade visual das postagens focando em ganchos visuais e gatilhos mentais de escassez e urgência, gerando 3x mais cliques nos anúncios do Facebook Ads.",
       "architecture": "Design criado no Photoshop e Figma, com roteiros validados em testes A/B.",
-      "tags": ["Design Estratégico", "Social Media", "Facebook Ads", "E-commerce"],
+      "tags": [
+        "Design Estratégico",
+        "Social Media",
+        "Facebook Ads",
+        "E-commerce"
+      ],
       "imagesBefore": [
         "/001antes.PNG"
       ],
@@ -16,7 +21,6 @@
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
       "category": "social-media"
     },
-
     {
       "id": "numa-bomba-insulina-inteligente",
       "title": "Numa",
@@ -100,25 +104,44 @@
       "category": "site"
     },
     {
-  "id": "klinik-atendimento-ia",
-  "title": "Klinik IA",
-  "summary": "Micro SaaS de atendimento automatizado e agendamento via WhatsApp com IA.",
-  "description": "Plataforma SaaS multi-tenant voltada para negócios locais (clínicas, salões, etc). Utiliza Inteligência Artificial (RAG) para consultar documentos do estabelecimento e responder dúvidas no WhatsApp, além de realizar agendamentos de forma autônoma e notificar proprietários via Telegram.",
-  "architecture": "Backend construído com NestJS, Prisma e LangChain. Banco PostgreSQL hospedado na Supabase com pgvector para buscas vetoriais. Frontend moderno com Next.js, Tailwind CSS e shadcn/ui. Integrações com OpenAI, Telegram e WhatsApp Cloud API.",
-  "tags": [
-    "SaaS",
-    "NestJS",
-    "Next.js",
-    "PostgreSQL",
-    "OpenAI",
-    "WhatsApp API"
-  ],
-  "image": "/dfdf11.PNG",
-  "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-  "demoUrl": "#",
-  "repoUrl": "#",
-  "category": "saas"
-}
-
+      "id": "klinik-atendimento-ia",
+      "title": "Klinik IA",
+      "summary": "Micro SaaS de atendimento automatizado e agendamento via WhatsApp com IA.",
+      "description": "Plataforma SaaS multi-tenant voltada para negócios locais (clínicas, salões, etc). Utiliza Inteligência Artificial (RAG) para consultar documentos do estabelecimento e responder dúvidas no WhatsApp, além de realizar agendamentos de forma autônoma e notificar proprietários via Telegram.",
+      "architecture": "Backend construído com NestJS, Prisma e LangChain. Banco PostgreSQL hospedado na Supabase com pgvector para buscas vetoriais. Frontend moderno com Next.js, Tailwind CSS e shadcn/ui. Integrações com OpenAI, Telegram e WhatsApp Cloud API.",
+      "tags": [
+        "SaaS",
+        "NestJS",
+        "Next.js",
+        "PostgreSQL",
+        "OpenAI",
+        "WhatsApp API"
+      ],
+      "image": "/dfdf11.PNG",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "#",
+      "repoUrl": "#",
+      "category": "saas"
+    },
+    {
+      "id": "estetica-fabi-saude",
+      "title": "Estética Fabi Saúde",
+      "summary": "Landing page de alta conversão para clínica de estética",
+      "description": "Landing page moderna e focada em conversão para a clínica Estética Fabi Saúde. A interface foi projetada para transmitir segurança, destacar procedimentos estéticos e facilitar o agendamento via WhatsApp, utilizando uma estrutura otimizada para mobile.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. A interface utiliza Framer Motion para animações suaves e interações, garantindo uma experiência premium. Os ícones são fornecidos pelo Lucide React.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Lucide React"
+      ],
+      "video": "/estetica.webm",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://estetica-fabisaude.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/estetica-fabisaude",
+      "category": "site"
+    }
   ]
 }
