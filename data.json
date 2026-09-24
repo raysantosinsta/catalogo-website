@@ -1,5 +1,21 @@
 {
   "projects": [
+    {
+      "id": "campanha-black-friday-moda",
+      "title": "Campanha E-commerce Moda",
+      "summary": "Estratégia visual para aumento de conversão em Black Friday.",
+      "description": "Nesta campanha, reformulamos a identidade visual das postagens focando em ganchos visuais e gatilhos mentais de escassez e urgência, gerando 3x mais cliques nos anúncios do Facebook Ads.",
+      "architecture": "Design criado no Photoshop e Figma, com roteiros validados em testes A/B.",
+      "tags": ["Design Estratégico", "Social Media", "Facebook Ads", "E-commerce"],
+      "imagesBefore": [
+        "/001antes.PNG"
+      ],
+      "imagesAfter": [
+        "/001depois.jfif"
+      ],
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "category": "social-media"
+    },
 
     {
       "id": "numa-bomba-insulina-inteligente",
@@ -19,68 +35,90 @@
       "video": "/numa.mp4",
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
       "demoUrl": "https://numa-roan.vercel.app/",
-      "repoUrl": "https://github.com/raysantosinsta/numa"
+      "repoUrl": "https://github.com/raysantosinsta/numa",
+      "category": "site"
     },
     {
-  "id": "yasmine-dantas-doceria",
-  "title": "Yasmine Dantas Doceria",
-  "summary": "Adoçando momentos inesquecíveis. Faça seu pedido pelo WhatsApp.",
-  "description": "Landing page moderna e elegante para a Yasmine Dantas Doceria, desenvolvida para apresentar os doces artesanais, destacar produtos, exibir depoimentos de clientes e integrar o catálogo ao WhatsApp para facilitar os pedidos, contando com um carrinho de compras flutuante.",
-  "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O gerenciamento de estado do carrinho é feito com Zustand, e as animações de interface e interações são implementadas com Framer Motion. A interface também utiliza Lucide React para a iconografia e fontes otimizadas (Inter e Playfair Display).",
+      "id": "yasmine-dantas-doceria",
+      "title": "Yasmine Dantas Doceria",
+      "summary": "Adoçando momentos inesquecíveis. Faça seu pedido pelo WhatsApp.",
+      "description": "Landing page moderna e elegante para a Yasmine Dantas Doceria, desenvolvida para apresentar os doces artesanais, destacar produtos, exibir depoimentos de clientes e integrar o catálogo ao WhatsApp para facilitar os pedidos, contando com um carrinho de compras flutuante.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O gerenciamento de estado do carrinho é feito com Zustand, e as animações de interface e interações são implementadas com Framer Motion. A interface também utiliza Lucide React para a iconografia e fontes otimizadas (Inter e Playfair Display).",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Zustand",
+        "Lucide React"
+      ],
+      "video": "/doce.webm",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://doces-tau.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/doces",
+      "category": "site"
+    },
+    {
+      "id": "imovel-new",
+      "title": "Imóvel New",
+      "summary": "Plataforma moderna com animações fluidas para o mercado imobiliário.",
+      "description": "Uma landing page imersiva para o setor imobiliário, focada em apresentar as propriedades com animações avançadas e uma navegação de alto desempenho. O projeto entrega uma experiência visual premium para conectar os clientes aos melhores imóveis de forma interativa.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de interface e interações complexas de rolagem foram criadas usando a biblioteca GSAP em conjunto com @gsap/react para garantir alta performance e fluidez.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP"
+      ],
+      "video": "/imovel.webm",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://imovel-new.vercel.app",
+      "repoUrl": "https://github.com/raysantosinsta/imovel-new",
+      "category": "site"
+    },
+    {
+      "id": "clinica-veterinaria",
+      "title": "Clínica Veterinária",
+      "summary": "Plataforma moderna e interativa para serviços veterinários, destacando o cuidado e amor aos pets.",
+      "description": "Uma landing page imersiva para uma clínica veterinária (Golden Pet), focada em apresentar a infraestrutura, serviços e avaliações dos clientes com navegação fluida e animações de alta performance.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O projeto conta com animações avançadas utilizando GSAP e Framer Motion, além de incorporar elementos 3D imersivos com Three.js e React Three Fiber.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP",
+        "Framer Motion",
+        "Three.js"
+      ],
+      "video": "/veterinario.webm",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-2 row-span-1",
+      "demoUrl": "https://clinica-veterinaria-nine-mu.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/clinica-veterinaria",
+      "category": "site"
+    },
+    {
+  "id": "klinik-atendimento-ia",
+  "title": "Klinik IA",
+  "summary": "Micro SaaS de atendimento automatizado e agendamento via WhatsApp com IA.",
+  "description": "Plataforma SaaS multi-tenant voltada para negócios locais (clínicas, salões, etc). Utiliza Inteligência Artificial (RAG) para consultar documentos do estabelecimento e responder dúvidas no WhatsApp, além de realizar agendamentos de forma autônoma e notificar proprietários via Telegram.",
+  "architecture": "Backend construído com NestJS, Prisma e LangChain. Banco PostgreSQL hospedado na Supabase com pgvector para buscas vetoriais. Frontend moderno com Next.js, Tailwind CSS e shadcn/ui. Integrações com OpenAI, Telegram e WhatsApp Cloud API.",
   "tags": [
+    "SaaS",
+    "NestJS",
     "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Framer Motion",
-    "Zustand",
-    "Lucide React"
+    "PostgreSQL",
+    "OpenAI",
+    "WhatsApp API"
   ],
-  "video": "/doce.webm",
-  "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1"
-,
-  "demoUrl": "https://doces-tau.vercel.app/",
-  "repoUrl": "https://github.com/raysantosinsta/doces"
-},
-{
-  "id": "imovel-new",
-  "title": "Imóvel New",
-  "summary": "Plataforma moderna com animações fluidas para o mercado imobiliário.",
-  "description": "Uma landing page imersiva para o setor imobiliário, focada em apresentar as propriedades com animações avançadas e uma navegação de alto desempenho. O projeto entrega uma experiência visual premium para conectar os clientes aos melhores imóveis de forma interativa.",
-  "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de interface e interações complexas de rolagem foram criadas usando a biblioteca GSAP em conjunto com @gsap/react para garantir alta performance e fluidez.",
-  "tags": [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "GSAP"
-  ],
-  "video": "/imovel.webm",
-  "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
-  "demoUrl": "https://imovel-new.vercel.app",
-  "repoUrl": "https://github.com/raysantosinsta/imovel-new"
-},
-{
-  "id": "clinica-veterinaria",
-  "title": "Clínica Veterinária",
-  "summary": "Plataforma moderna e interativa para serviços veterinários, destacando o cuidado e amor aos pets.",
-  "description": "Uma landing page imersiva para uma clínica veterinária (Golden Pet), focada em apresentar a infraestrutura, serviços e avaliações dos clientes com navegação fluida e animações de alta performance.",
-  "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O projeto conta com animações avançadas utilizando GSAP e Framer Motion, além de incorporar elementos 3D imersivos com Three.js e React Three Fiber.",
-  "tags": [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "GSAP",
-    "Framer Motion",
-    "Three.js"
-  ],
-  "video": "/veterinario.webm",
-  "colSpan": "col-span-1 md:col-span-1 lg:col-span-2 row-span-1",
-  "demoUrl": "https://clinica-veterinaria-nine-mu.vercel.app/",
-  "repoUrl": "https://github.com/raysantosinsta/clinica-veterinaria"
+  "image": "/dfdf11.png",
+  "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+  "demoUrl": "#",
+  "repoUrl": "#",
+  "category": "saas"
 }
-
 
   ]
 }
