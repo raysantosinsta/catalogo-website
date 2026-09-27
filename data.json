@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "campanha-black-friday-moda",
-      "title": "Campanha E-commerce Moda",
+      "title": "Campanha E-commerce Beauty",
       "summary": "Estratégia visual para aumento de conversão em Black Friday.",
       "description": "Nesta campanha, reformulamos a identidade visual das postagens focando em ganchos visuais e gatilhos mentais de escassez e urgência, gerando 3x mais cliques nos anúncios do Facebook Ads.",
       "architecture": "Design criado no Photoshop e Figma, com roteiros validados em testes A/B.",
@@ -17,6 +17,31 @@
       ],
       "imagesAfter": [
         "/001depois.png"
+      ],
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "category": "social-media"
+    },
+    {
+      "id": "campanha-vestido-azul-premium",
+      "title": "Campanha E-commerce Vestido Azul",
+      "summary": "Campanha visual premium para valorizar vestido feminino azul e aumentar percepção de exclusividade no e-commerce.",
+      "description": "Nesta campanha, criamos uma identidade visual sofisticada para destacar o vestido azul como peça principal, utilizando fotografias lifestyle e editoriais de moda que valorizam o caimento, a textura do tecido e a elegância da peça em diferentes ambientes.",
+      "architecture": "Direção de arte desenvolvida no Photoshop e Figma, com criação de cenários fotográficos, tratamento de imagem e composição visual inspirada em campanhas internacionais de moda premium.",
+      "tags": [
+        "Moda Feminina",
+        "Vestido Premium",
+        "E-commerce",
+        "Campanha Publicitária"
+      ],
+      "imagesBefore": [
+        "/padraoazul.PNG"
+      ],
+      "imagesAfter": [
+        "/1azul.jpg",
+        "/2azul.jpg",
+        "/3azul.jpg",
+        "/4azul.jpg",
+        "/5azul.jpg"
       ],
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
       "category": "social-media"
