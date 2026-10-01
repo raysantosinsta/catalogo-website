@@ -47,6 +47,30 @@
       "category": "social-media"
     },
     {
+      "id": "carrossel-educativo-emagrecimento",
+      "title": "Carrossel Educativo - Emagrecimento",
+      "summary": "Carrossel estratégico para educar o público e aumentar a divulgação.",
+      "description": "Carrossel educativo criado para ajudar no engajamento e aumentar a divulgação para mais clientes. A sequência conduz o usuário através da quebra de mitos sobre o emagrecimento até a apresentação do protocolo estético, finalizando com uma forte chamada para ação.",
+      "architecture": "Narrativa visual estruturada em 5 passos (Gatilho, Mito, Estímulo Estratégico, Protocolo e CTA).",
+      "tags": [
+        "Carrossel Educativo",
+        "Estratégia Visual",
+        "Engajamento"
+      ],
+      "imagesBefore": [
+        "/black-placeholder.svg"
+      ],
+      "imagesAfter": [
+        "/1.jpg",
+        "/2.jpg",
+        "/3.jpg",
+        "/4.jpg",
+        "/5.jpg"
+      ],
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "category": "social-media"
+    },
+    {
       "id": "numa-bomba-insulina-inteligente",
       "title": "Numa",
       "summary": "Bomba de insulina inteligente para o cuidado com a diabetes",

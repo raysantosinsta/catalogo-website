@@ -22,8 +22,8 @@ export default function ImageCarousel({ images, altPrefix, title, titleColor }: 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, i) => (
-          <div key={i} className="min-w-full h-full relative flex-shrink-0">
-            <Image src={img} alt={`${altPrefix} ${i+1}`} fill sizes="(max-width: 768px) 100vw, 50vw" unoptimized className="object-cover object-center" />
+          <div key={i} className="min-w-full h-full relative flex-shrink-0 bg-black/40">
+            <Image src={img} alt={`${altPrefix} ${i+1}`} fill sizes="(max-width: 768px) 100vw, 50vw" unoptimized className="object-contain object-center" />
           </div>
         ))}
       </div>
