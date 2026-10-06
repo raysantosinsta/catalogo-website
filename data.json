@@ -85,7 +85,7 @@
         "ScrollTrigger",
         "Lucide React"
       ],
-      "video": "/numa.mp4",
+      "video": "/numa1.gif",
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
       "demoUrl": "https://numa-roan.vercel.app/",
       "repoUrl": "https://github.com/raysantosinsta/numa",
@@ -106,7 +106,7 @@
         "Zustand",
         "Lucide React"
       ],
-      "video": "/doce.webm",
+      "video": "/doce1.gif",
       "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
       "demoUrl": "https://doces-tau.vercel.app/",
       "repoUrl": "https://github.com/raysantosinsta/doces",
@@ -125,7 +125,7 @@
         "Tailwind CSS",
         "GSAP"
       ],
-      "video": "/imovel.webm",
+      "video": "/imovel1.gif",
       "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
       "demoUrl": "https://imovel-new.vercel.app",
       "repoUrl": "https://github.com/raysantosinsta/imovel-new",
@@ -146,7 +146,7 @@
         "Framer Motion",
         "Three.js"
       ],
-      "video": "/veterinario.webm",
+      "video": "/veterinario1.gif",
       "colSpan": "col-span-1 md:col-span-1 lg:col-span-2 row-span-1",
       "demoUrl": "https://clinica-veterinaria-nine-mu.vercel.app/",
       "repoUrl": "https://github.com/raysantosinsta/clinica-veterinaria",
@@ -186,7 +186,7 @@
         "Framer Motion",
         "Lucide React"
       ],
-      "video": "/estetica.webm",
+      "video": "/estetica1.gif",
       "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
       "demoUrl": "https://estetica-fabisaude.vercel.app/",
       "repoUrl": "https://github.com/raysantosinsta/estetica-fabisaude",
