@@ -16,7 +16,7 @@ export default function ImageCarousel({ images, altPrefix, title, titleColor }: 
   };
 
   return (
-    <div className="relative w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden border border-[var(--border)] group bg-black/20">
+    <div className="relative w-full h-[320px] sm:h-[420px] md:h-[550px] lg:h-[600px] rounded-xl overflow-hidden border border-[var(--border)] group bg-black/20">
       <div 
         className="absolute inset-0 transition-transform duration-500 ease-in-out flex" 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -30,16 +30,20 @@ export default function ImageCarousel({ images, altPrefix, title, titleColor }: 
       {images.length > 1 && (
         <>
           <button 
+            type="button"
             onClick={prevSlide} 
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[var(--accent)] hover:text-black border border-white/10"
+            aria-label="Imagem anterior"
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/70 text-white flex items-center justify-center backdrop-blur-md opacity-85 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[var(--accent)] hover:text-black border border-white/10 active:scale-95 touch-manipulation z-10"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={20} />
           </button>
           <button 
+            type="button"
             onClick={nextSlide} 
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[var(--accent)] hover:text-black border border-white/10"
+            aria-label="Próxima imagem"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/70 text-white flex items-center justify-center backdrop-blur-md opacity-85 md:opacity-0 md:group-hover:opacity-100 transition-opacity hover:bg-[var(--accent)] hover:text-black border border-white/10 active:scale-95 touch-manipulation z-10"
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={20} />
           </button>
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
             {images.map((_, i) => (

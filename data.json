@@ -1,5 +1,278 @@
 {
-  "projects": [
+  "criacaoDeSites": [
+    {
+      "id": "numa-bomba-insulina-inteligente",
+      "title": "Numa",
+      "summary": "Bomba de insulina inteligente para o cuidado com a diabetes",
+      "description": "Landing page moderna para a Numa, uma bomba de insulina inteligente criada para ajudar pessoas com diabetes a controlar a aplicação de insulina com mais conforto, liberdade e menos monitoramento diário.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de entrada, rolagem, fixação de seções e transições são implementadas com GSAP, ScrollTrigger e @gsap/react. A interface também utiliza Lucide React para os ícones.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP",
+        "ScrollTrigger",
+        "Lucide React"
+      ],
+      "video": "/numa1.gif",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://numa-roan.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/numa",
+      "category": "saude",
+      "segment": "saude"
+    },
+    {
+      "id": "yasmine-dantas-doceria",
+      "title": "Yasmine Dantas Doceria",
+      "summary": "Adoçando momentos inesquecíveis. Faça seu pedido pelo WhatsApp.",
+      "description": "Landing page moderna e elegante para a Yasmine Dantas Doceria, desenvolvida para apresentar os doces artesanais, destacar produtos, exibir depoimentos de clientes e integrar o catálogo ao WhatsApp para facilitar os pedidos, contando com um carrinho de compras flutuante.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O gerenciamento de estado do carrinho é feito com Zustand, e as animações de interface e interações são implementadas com Framer Motion. A interface também utiliza Lucide React para a iconografia e fontes otimizadas (Inter e Playfair Display).",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Zustand",
+        "Lucide React"
+      ],
+      "video": "/doce1.gif",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://doces-tau.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/doces",
+      "category": "gastronomia",
+      "segment": "gastronomia"
+    },
+    {
+      "id": "imovel-new",
+      "title": "Imóvel New",
+      "summary": "Plataforma moderna com animações fluidas para o mercado imobiliário.",
+      "description": "Uma landing page imersiva para o setor imobiliário, focada em apresentar as propriedades com animações avançadas e uma navegação de alto desempenho. O projeto entrega uma experiência visual premium para conectar os clientes aos melhores imóveis de forma interativa.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de interface e interações complexas de rolagem foram criadas usando a biblioteca GSAP em conjunto com @gsap/react para garantir alta performance e fluidez.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP"
+      ],
+      "video": "/imovel1.gif",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://imovel-new.vercel.app",
+      "repoUrl": "https://github.com/raysantosinsta/imovel-new",
+      "category": "imobiliaria",
+      "segment": "imobiliaria"
+    },
+    {
+      "id": "clinica-veterinaria",
+      "title": "Clínica Veterinária",
+      "summary": "Plataforma moderna e interativa para serviços veterinários, destacando o cuidado e amor aos pets.",
+      "description": "Uma landing page imersiva para uma clínica veterinária (Golden Pet), focada em apresentar a infraestrutura, serviços e avaliações dos clientes com navegação fluida e animações de alta performance.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O projeto conta com animações avançadas utilizando GSAP e Framer Motion, além de incorporar elementos 3D imersivos com Three.js e React Three Fiber.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GSAP",
+        "Framer Motion",
+        "Three.js"
+      ],
+      "video": "/veterinario1.gif",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-2 row-span-1",
+      "demoUrl": "https://clinica-veterinaria-nine-mu.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/clinica-veterinaria",
+      "category": "veterinaria",
+      "segment": "veterinaria"
+    },
+    {
+      "id": "estetica-fabi-saude",
+      "title": "Estética Fabi Saúde",
+      "summary": "Landing page de alta conversão para clínica de estética",
+      "description": "Landing page moderna e focada em conversão para a clínica Estética Fabi Saúde. A interface foi projetada para transmitir segurança, destacar procedimentos estéticos e facilitar o agendamento via WhatsApp, utilizando uma estrutura otimizada para mobile.",
+      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. A interface utiliza Framer Motion para animações suaves e interações, garantindo uma experiência premium. Os ícones são fornecidos pelo Lucide React.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Lucide React"
+      ],
+      "video": "/estetica1.gif",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://estetica-fabisaude.vercel.app/",
+      "repoUrl": "https://github.com/raysantosinsta/estetica-fabisaude",
+      "category": "clinica-estetica",
+      "segment": "clinica-estetica"
+    },
+    {
+      "id": "jorio-da-escossia-conceito",
+      "title": "Jório Conceito",
+      "summary": "Clínica odontológica de alto padrão com tecnologia avançada e estética do sorriso.",
+      "description": "Website institucional e de conversão premium para a Jório da Escóssia Conceito, referência em odontologia de alta complexidade e estética em Fortaleza desde 1959. Apresenta corpo clínico multidisciplinar, centro cirúrgico próprio, exames radiológicos e agendamento digital.",
+      "architecture": "Frontend ultra-otimizado desenvolvido com Astro v7, TypeScript, Tailwind CSS e Vanilla CSS, com animações fluidas, suporte a dark/light mode e performance de nível máximo.",
+      "tags": [
+        "Astro",
+        "TypeScript",
+        "Tailwind CSS",
+        "SEO",
+        "Performance"
+      ],
+      "image": "/jorio.png",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://jorioconceito.com.br/",
+      "repoUrl": "#",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
+    {
+      "id": "well-clinic-odontologia",
+      "title": "Well Clinic Odontologia",
+      "summary": "Clínica odontológica em São Paulo, berço do Digital Smile Design (DSD) e odontologia sistêmica.",
+      "description": "Website institucional moderno para a Well Clinic Odontologia, localizada no Jardim Paulista em São Paulo. Reúne 170 anos de legado da família Coachman, o berço do Digital Smile Design, atendimento sistêmico de alta precisão e agendamento digital humanizado.",
+      "architecture": "Desenvolvido com arquitetura moderna orientada a componentes, tipografia personalizada (Louis George Cafe), otimização avançada para motores de busca (SEO técnico) e design responsivo premium.",
+      "tags": [
+        "JavaScript",
+        "CSS3",
+        "HTML5",
+        "SEO",
+        "Web Components",
+        "DSD"
+      ],
+      "image": "/wellclinic.png",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://wellclinic.com/",
+      "repoUrl": "#",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
+    {
+      "id": "implar-hospital-odontologico",
+      "title": "Implar Hospital Odontológico",
+      "summary": "O 1º Hospital Odontológico do Brasil. Referência em odontologia digital e centros cirúrgicos.",
+      "description": "Website institucional de alta tecnologia para o Implar, primeiro hospital odontológico do Brasil em Poços de Caldas / MG. Conta com infraestrutura hospitalar completa, salas cirúrgicas avançadas, hotelaria hospitalar e odontologia digital de alta precisão.",
+      "architecture": "Desenvolvido com HTML5 semântico, CSS3 com design system sob medida, JavaScript moderno para transições e carrosséis fluidos, tipografia sofisticada e alta fidelidade em dispositivos móveis.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Odontologia Digital",
+        "SEO"
+      ],
+      "image": "/implar.png",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://www.implar.com.br/",
+      "repoUrl": "#",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
+    {
+      "id": "odonto-design-goiania",
+      "title": "Odonto Design",
+      "summary": "Odontologia de precisão no Setor Bueno em Goiânia. Lentes de contato, implantes e estética dental.",
+      "description": "Landing page de alta conversão para a clínica Odonto Design em Goiânia. Estruturada para destacar procedimentos de odontologia estética de excelência, lentes de contato de porcelana, alinhadores transparentes e harmonização orofacial.",
+      "architecture": "Desenvolvido com frontend moderno, design responsivo de alta resolução, carregamento otimizado, integração para agendamento direto via WhatsApp e SEO local estratégico.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Estética Dental",
+        "SEO"
+      ],
+      "image": "/odontodesign.png",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://www.odontodesignonline.com.br/",
+      "repoUrl": "#",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
+    {
+      "id": "oral-sin-implantes",
+      "title": "Oral Sin Implantes",
+      "summary": "Rede Nº 1 em implantes dentários do Brasil com mais de 500 clínicas.",
+      "description": "Portal corporativo e de captação de pacientes para a Oral Sin Implantes, a maior rede de clínicas de implantes dentários do país. Sistema integrado para localização de unidades em todo o Brasil, agendamento de avaliações e apresentação completa de tratamentos.",
+      "architecture": "Desenvolvido com arquitetura corporativa moderna, carregamento rápido em escala nacional, geolocalização de clínicas, alta responsividade e foco em conversão.",
+      "tags": [
+        "JavaScript",
+        "CSS3",
+        "HTML5",
+        "Rede Odontológica",
+        "SEO"
+      ],
+      "image": "/oralsin.png",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://www.oralsin.com.br/",
+      "repoUrl": "#",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
+    {
+      "id": "consulte-seu-sorriso-odontocompany",
+      "title": "OdontoCompany Grupo Lins",
+      "summary": "Portal de agendamento e tratamentos da OdontoCompany para unidades regionais.",
+      "description": "Landing page moderna de agendamento e serviços da OdontoCompany (Grupo Lins), com agendamento online rápido, apresentação de tratamentos odontológicos (implantes, ortodontia, clareamento, harmonização) e suporte humanizado aos pacientes.",
+      "architecture": "Desenvolvido com foco em alta conversão mobile, interface limpa, integração direta com WhatsApp para agendamento ágil e otimização local de busca.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Landing Page",
+        "Conversão"
+      ],
+      "image": "/consulteseusorriso.png",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://www.consulteseusorriso.com.br/",
+      "repoUrl": "#",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
+    {
+      "id": "nutricao-rust",
+      "title": "Nutrição & Performance Clínica",
+      "summary": "Landing page de alta conversão para nutricionista com foco em saúde e planos alimentares personalizados.",
+      "description": "Website moderno desenvolvido para consultório de nutrição, destacando serviços como reeducação alimentar, emagrecimento saudável, nutrição esportiva e acompanhamento individualizado. Conta com design clean, agendamento facilitado e depoimentos de pacientes.",
+      "architecture": "Construído com Next.js, React e Tailwind CSS, garantindo performance ultrarrápida, design responsivo de alto padrão e SEO técnico otimizado para atração de novos pacientes.",
+      "tags": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Nutrição & Saúde",
+        "Alta Conversão"
+      ],
+      "image": "/nutricao.png",
+      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
+      "demoUrl": "https://nutricao-rust.vercel.app/",
+      "repoUrl": "#",
+      "category": "nutricao",
+      "segment": "nutricao"
+    }
+  ],
+  "estrategiaVisual": [
+    {
+      "id": "campanha-odontologia-visual-reels",
+      "title": "Campanha Odontologia & Audiovisual",
+      "summary": "Estratégia visual e audiovisual de alta conversão para clínica odontológica.",
+      "description": "Desenvolvimento de identidade visual e produção audiovisual voltada para captação de pacientes em odontologia estética. Combinação de fotografia de alto padrão com vídeo dinâmico para Reels e anúncios pagos, aumentando a autoridade e o agendamento de consultas.",
+      "architecture": "Direção de arte no Photoshop e edição em Premiere, com roteiro estratégico de engajamento e chamada direta para agendamento.",
+      "tags": [
+        "Odontologia",
+        "Social Media",
+        "Audiovisual",
+        "Reels & Anúncios"
+      ],
+      "imagesBefore": [
+        "/black-placeholder.svg"
+      ],
+      "imagesAfter": [
+        "/dente1.jpg"
+      ],
+      "video": "/videodente.mp4",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "category": "odontologia",
+      "segment": "odontologia"
+    },
     {
       "id": "campanha-black-friday-moda",
       "title": "Campanha E-commerce Beauty",
@@ -19,7 +292,8 @@
         "/001depois.png"
       ],
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "social-media"
+      "category": "ecommerce",
+      "segment": "ecommerce"
     },
     {
       "id": "campanha-vestido-azul-premium",
@@ -44,7 +318,8 @@
         "/5azul.jpg"
       ],
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "social-media"
+      "category": "ecommerce",
+      "segment": "ecommerce"
     },
     {
       "id": "carrossel-educativo-emagrecimento",
@@ -68,90 +343,11 @@
         "/5.jpg"
       ],
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "social-media"
-    },
-    {
-      "id": "numa-bomba-insulina-inteligente",
-      "title": "Numa",
-      "summary": "Bomba de insulina inteligente para o cuidado com a diabetes",
-      "description": "Landing page moderna para a Numa, uma bomba de insulina inteligente criada para ajudar pessoas com diabetes a controlar a aplicação de insulina com mais conforto, liberdade e menos monitoramento diário.",
-      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de entrada, rolagem, fixação de seções e transições são implementadas com GSAP, ScrollTrigger e @gsap/react. A interface também utiliza Lucide React para os ícones.",
-      "tags": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "GSAP",
-        "ScrollTrigger",
-        "Lucide React"
-      ],
-      "video": "/numa1.gif",
-      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "demoUrl": "https://numa-roan.vercel.app/",
-      "repoUrl": "https://github.com/raysantosinsta/numa",
-      "category": "site"
-    },
-    {
-      "id": "yasmine-dantas-doceria",
-      "title": "Yasmine Dantas Doceria",
-      "summary": "Adoçando momentos inesquecíveis. Faça seu pedido pelo WhatsApp.",
-      "description": "Landing page moderna e elegante para a Yasmine Dantas Doceria, desenvolvida para apresentar os doces artesanais, destacar produtos, exibir depoimentos de clientes e integrar o catálogo ao WhatsApp para facilitar os pedidos, contando com um carrinho de compras flutuante.",
-      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O gerenciamento de estado do carrinho é feito com Zustand, e as animações de interface e interações são implementadas com Framer Motion. A interface também utiliza Lucide React para a iconografia e fontes otimizadas (Inter e Playfair Display).",
-      "tags": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Zustand",
-        "Lucide React"
-      ],
-      "video": "/doce1.gif",
-      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
-      "demoUrl": "https://doces-tau.vercel.app/",
-      "repoUrl": "https://github.com/raysantosinsta/doces",
-      "category": "site"
-    },
-    {
-      "id": "imovel-new",
-      "title": "Imóvel New",
-      "summary": "Plataforma moderna com animações fluidas para o mercado imobiliário.",
-      "description": "Uma landing page imersiva para o setor imobiliário, focada em apresentar as propriedades com animações avançadas e uma navegação de alto desempenho. O projeto entrega uma experiência visual premium para conectar os clientes aos melhores imóveis de forma interativa.",
-      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. As animações de interface e interações complexas de rolagem foram criadas usando a biblioteca GSAP em conjunto com @gsap/react para garantir alta performance e fluidez.",
-      "tags": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "GSAP"
-      ],
-      "video": "/imovel1.gif",
-      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
-      "demoUrl": "https://imovel-new.vercel.app",
-      "repoUrl": "https://github.com/raysantosinsta/imovel-new",
-      "category": "site"
-    },
-    {
-      "id": "clinica-veterinaria",
-      "title": "Clínica Veterinária",
-      "summary": "Plataforma moderna e interativa para serviços veterinários, destacando o cuidado e amor aos pets.",
-      "description": "Uma landing page imersiva para uma clínica veterinária (Golden Pet), focada em apresentar a infraestrutura, serviços e avaliações dos clientes com navegação fluida e animações de alta performance.",
-      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. O projeto conta com animações avançadas utilizando GSAP e Framer Motion, além de incorporar elementos 3D imersivos com Three.js e React Three Fiber.",
-      "tags": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "GSAP",
-        "Framer Motion",
-        "Three.js"
-      ],
-      "video": "/veterinario1.gif",
-      "colSpan": "col-span-1 md:col-span-1 lg:col-span-2 row-span-1",
-      "demoUrl": "https://clinica-veterinaria-nine-mu.vercel.app/",
-      "repoUrl": "https://github.com/raysantosinsta/clinica-veterinaria",
-      "category": "site"
-    },
+      "category": "carrossel",
+      "segment": "carrossel"
+    }
+  ],
+  "saas": [
     {
       "id": "klinik-atendimento-ia",
       "title": "Klinik IA",
@@ -170,27 +366,8 @@
       "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
       "demoUrl": "#",
       "repoUrl": "#",
-      "category": "saas"
-    },
-    {
-      "id": "estetica-fabi-saude",
-      "title": "Estética Fabi Saúde",
-      "summary": "Landing page de alta conversão para clínica de estética",
-      "description": "Landing page moderna e focada em conversão para a clínica Estética Fabi Saúde. A interface foi projetada para transmitir segurança, destacar procedimentos estéticos e facilitar o agendamento via WhatsApp, utilizando uma estrutura otimizada para mobile.",
-      "architecture": "Frontend desenvolvido com Next.js 16, React 19, TypeScript e Tailwind CSS 4. A interface utiliza Framer Motion para animações suaves e interações, garantindo uma experiência premium. Os ícones são fornecidos pelo Lucide React.",
-      "tags": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion",
-        "Lucide React"
-      ],
-      "video": "/estetica1.gif",
-      "colSpan": "col-span-1 md:col-span-1 lg:col-span-1 row-span-1",
-      "demoUrl": "https://estetica-fabisaude.vercel.app/",
-      "repoUrl": "https://github.com/raysantosinsta/estetica-fabisaude",
-      "category": "site"
+      "category": "ia",
+      "segment": "ia"
     }
   ]
 }
