@@ -219,7 +219,7 @@ function HomeContent() {
               alt="Highlander Santos"
               fill
               sizes="(max-width: 768px) 100vw, 400px"
-              className="object-cover object-top grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700 ease-out"
+              className="object-cover object-top grayscale-0 contrast-100 md:grayscale md:contrast-105 md:group-hover:grayscale-0 md:group-hover:contrast-100 transition-all duration-700 ease-out"
               priority
             />
 
@@ -235,7 +235,7 @@ function HomeContent() {
           {[
             { id: "site", label: "Criação de Sites" },
             { id: "social-media", label: "Estratégia Visual" },
-            { id: "saas", label: "Sistemas SaaS" }
+            { id: "saas", label: "Sistemas" }
           ].map((tab) => (
             <button
               key={tab.id}

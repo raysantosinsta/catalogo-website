@@ -31,6 +31,13 @@ export const metadata: Metadata = {
     site: "@highlandersantos",
     creator: "@highlandersantos",
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

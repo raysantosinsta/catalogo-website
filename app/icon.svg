@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE596" />
+      <stop offset="50%" stop-color="#E8C468" />
+      <stop offset="100%" stop-color="#B88E28" />
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C468" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#E8C468" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="4" y="4" width="92" height="92" rx="26" fill="url(#bg)" stroke="url(#border)" stroke-width="4" />
+
+  <!-- Monogram H stylized -->
+  <path d="M30 26 V74 M70 26 V74 M30 50 H70" stroke="url(#gold)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Subtle Accent Dot -->
+  <circle cx="50" cy="50" r="3" fill="#FFF" opacity="0.9" />
+</svg>
