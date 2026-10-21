@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Software engineering portfolio and digital showroom.",
   openGraph: {
     title: "Highlander Santos – Digital Showroom",
-    description: "Explore projetos de desenvolvimento full‑stack, design visual e SaaS.",
+    description: "Explore projetos de arquitetura de software, sistemas distribuídos e inteligência artificial.",
     url: "https://highlandersantos.com",
     siteName: "Highlander Santos",
     images: [

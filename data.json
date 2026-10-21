@@ -249,105 +249,53 @@
       "segment": "nutricao"
     }
   ],
-  "estrategiaVisual": [
-    {
-      "id": "campanha-odontologia-visual-reels",
-      "title": "Campanha Odontologia & Audiovisual",
-      "summary": "Estratégia visual e audiovisual de alta conversão para clínica odontológica.",
-      "description": "Desenvolvimento de identidade visual e produção audiovisual voltada para captação de pacientes em odontologia estética. Combinação de fotografia de alto padrão com vídeo dinâmico para Reels e anúncios pagos, aumentando a autoridade e o agendamento de consultas.",
-      "architecture": "Direção de arte no Photoshop e edição em Premiere, com roteiro estratégico de engajamento e chamada direta para agendamento.",
-      "tags": [
-        "Odontologia",
-        "Social Media",
-        "Audiovisual",
-        "Reels & Anúncios"
-      ],
-      "imagesBefore": [
-        "/black-placeholder.svg"
-      ],
-      "imagesAfter": [
-        "/dente1.jpg"
-      ],
-      "video": "/video-dr-rafael-duarte.mp4",
-      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "odontologia",
-      "segment": "odontologia"
-    },
-    {
-      "id": "campanha-black-friday-moda",
-      "title": "Campanha E-commerce Beauty",
-      "summary": "Estratégia visual para aumento de conversão em Black Friday.",
-      "description": "Nesta campanha, reformulamos a identidade visual das postagens focando em ganchos visuais e gatilhos mentais de escassez e urgência, gerando 3x mais cliques nos anúncios do Facebook Ads.",
-      "architecture": "Design criado no Photoshop e Figma, com roteiros validados em testes A/B.",
-      "tags": [
-        "Design Estratégico",
-        "Social Media",
-        "Facebook Ads",
-        "E-commerce"
-      ],
-      "imagesBefore": [
-        "/001antes.PNG"
-      ],
-      "imagesAfter": [
-        "/001depois.png"
-      ],
-      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "ecommerce",
-      "segment": "ecommerce"
-    },
-    {
-      "id": "campanha-vestido-azul-premium",
-      "title": "Campanha E-commerce Vestido Azul",
-      "summary": "Campanha visual premium para valorizar vestido feminino azul e aumentar percepção de exclusividade no e-commerce.",
-      "description": "Nesta campanha, criamos uma identidade visual sofisticada para destacar o vestido azul como peça principal, utilizando fotografias lifestyle e editoriais de moda que valorizam o caimento, a textura do tecido e a elegância da peça em diferentes ambientes.",
-      "architecture": "Direção de arte desenvolvida no Photoshop e Figma, com criação de cenários fotográficos, tratamento de imagem e composição visual inspirada em campanhas internacionais de moda premium.",
-      "tags": [
-        "Moda Feminina",
-        "Vestido Premium",
-        "E-commerce",
-        "Campanha Publicitária"
-      ],
-      "imagesBefore": [
-        "/padraoazul.PNG"
-      ],
-      "imagesAfter": [
-        "/1azul.jpg",
-        "/2azul.jpg",
-        "/3azul.jpg",
-        "/4azul.jpg",
-        "/5azul.jpg"
-      ],
-      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "ecommerce",
-      "segment": "ecommerce"
-    },
-    {
-      "id": "carrossel-educativo-emagrecimento",
-      "title": "Carrossel Educativo - Emagrecimento",
-      "summary": "Carrossel estratégico para educar o público e aumentar a divulgação.",
-      "description": "Carrossel educativo criado para ajudar no engajamento e aumentar a divulgação para mais clientes. A sequência conduz o usuário através da quebra de mitos sobre o emagrecimento até a apresentação do protocolo estético, finalizando com uma forte chamada para ação.",
-      "architecture": "Narrativa visual estruturada em 5 passos (Gatilho, Mito, Estímulo Estratégico, Protocolo e CTA).",
-      "tags": [
-        "Carrossel Educativo",
-        "Estratégia Visual",
-        "Engajamento"
-      ],
-      "imagesBefore": [
-        "/black-placeholder.svg"
-      ],
-      "imagesAfter": [
-        "/1.jpg",
-        "/2.jpg",
-        "/3.jpg",
-        "/4.jpg",
-        "/5.jpg"
-      ],
-      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "category": "carrossel",
-      "segment": "carrossel"
-    }
-  ],
   "saas": [
+    {
+      "id": "agentforge-mcp-ai",
+      "title": "AgentForge MCP: Agentes & RAG",
+      "summary": "Plataforma de orquestração de Agentes Autônomos com RAG Avançado, Model Context Protocol (MCP) e LangGraph.",
+      "description": "Solução avançada de Engenharia de IA que combina agentes autônomos com ciclos de raciocínio ReAct (Thought -> Action -> Observation) via LangGraph. Implementa um servidor nativo Model Context Protocol (MCP) para padronizar o consumo de ferramentas corporativas, embeddings locais via HuggingFace com busca vetorial no PostgreSQL (pgvector), inferência ultra-rápida via Groq LPU e pipeline automatizado de avaliação LLM-as-a-judge para mitigação estrita de alucinações.",
+      "architecture": "Esteira agêntica com LangGraph (create_react_agent) e inferência em milissegundos via Groq API. Servidor MCP nativo com ferramentas corporativas acessíveis via Stdio/FastAPI e depurável via MCP Inspector. Pipeline RAG com embeddings locais (all-MiniLM-L6-v2), PostgreSQL com extensão pgvector e suite de testes automatizados LLM-as-a-judge. 100% conteinerizado com Docker Compose.",
+      "tags": [
+        "LangGraph",
+        "Model Context Protocol",
+        "Groq API",
+        "PostgreSQL",
+        "pgvector",
+        "Python",
+        "Docker",
+        "LLM-as-a-judge"
+      ],
+      "image": "/agentforge-mcp.jpg",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://github.com/raysantosinsta/ai-agentic-rag-mcp",
+      "repoUrl": "https://github.com/raysantosinsta/ai-agentic-rag-mcp",
+      "category": "ia",
+      "segment": "ia"
+    },
+    {
+      "id": "rag-industrial-manuais",
+      "title": "RAG Industrial: Manuais & Normas",
+      "summary": "Solução de RAG Híbrido de missão crítica para consulta de manuais técnicos, códigos de erro e normas industriais.",
+      "description": "Sistema projetado para ambientes de engenharia e manutenção industrial. Elimina alucinações e ambiguidades ao consultar códigos de erro (como falhas elétricas ou mecânicas E-030 vs E-029) e normas (NR-12, ISO-9001). Combina busca determinística via Regex, recuperação vetorial densa com pgvector, reranking com penalização de tabelas gerais e geração com citações exatas de página e documento.",
+      "architecture": "Engine de busca híbrida construído em Python com FastAPI e PyMuPDF. Banco PostgreSQL com extensão pgvector para embeddings. Algoritmo próprio de reranking e validação estrita de fontes. Containerização completa via Docker Compose.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "pgvector",
+        "Hybrid RAG",
+        "PyMuPDF",
+        "Docker",
+        "LLMs"
+      ],
+      "image": "/rag-industrial.jpg",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://github.com/raysantosinsta/RAG-for-technical-manual-queries",
+      "repoUrl": "https://github.com/raysantosinsta/RAG-for-technical-manual-queries",
+      "category": "ia",
+      "segment": "ia"
+    },
     {
       "id": "klinik-atendimento-ia",
       "title": "Klinik IA",
@@ -355,7 +303,6 @@
       "description": "Plataforma SaaS multi-tenant voltada para negócios locais (clínicas, salões, etc). Utiliza Inteligência Artificial (RAG) para consultar documentos do estabelecimento e responder dúvidas no WhatsApp, além de realizar agendamentos de forma autônoma e notificar proprietários via Telegram.",
       "architecture": "Backend construído com NestJS, Prisma e LangChain. Banco PostgreSQL hospedado na Supabase com pgvector para buscas vetoriais. Frontend moderno com Next.js, Tailwind CSS e shadcn/ui. Integrações com OpenAI, Telegram e WhatsApp Cloud API.",
       "tags": [
-        "SaaS",
         "NestJS",
         "Next.js",
         "PostgreSQL",
@@ -368,6 +315,52 @@
       "repoUrl": "#",
       "category": "ia",
       "segment": "ia"
+    },
+    {
+      "id": "scalable-web-scraping-platform",
+      "title": "Scalable Web Scraping Platform",
+      "summary": "Plataforma distribuída e assíncrona de web scraping para extração de alta performance em SPAs modernas.",
+      "description": "Sistema distribuído orientado a eventos desenvolvido para superar as limitações de scrapers tradicionais em aplicações Single Page Applications (React, Vue) que exigem execução pesada de JavaScript. Implementa o padrão Producer-Consumer com resposta imediata HTTP 202-like, garantindo que a API permaneça não-bloqueante e resiliente mesmo sob alta carga.",
+      "architecture": "Arquitetura de microsserviços com API em NestJS (Producer), fila de mensagens em memória no Redis (Message Broker), workers distribuídos em Python + Playwright com Chromium headless aguardando o tráfego de rede cessar (networkidle), e persistência transacional com PostgreSQL e Prisma ORM para auditoria e rastreabilidade total do ciclo de vida dos jobs (PENDING -> PROCESSING -> COMPLETED). Infraestrutura 100% conteinerizada com Docker Compose e multi-stage builds.",
+      "tags": [
+        "NestJS",
+        "Python",
+        "Playwright",
+        "Redis",
+        "PostgreSQL",
+        "Docker",
+        "Prisma ORM",
+        "Event-Driven"
+      ],
+      "image": "/web-scraping-platform.jpg",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://github.com/raysantosinsta/WEB-SCRAPING",
+      "repoUrl": "https://github.com/raysantosinsta/WEB-SCRAPING",
+      "category": "automacao",
+      "segment": "automacao"
+    },
+    {
+      "id": "vigia-cidadao-dados-publicos",
+      "title": "Vigia Cidadão: API & Dados Públicos",
+      "summary": "API backend modular e resiliente para ingestão assíncrona e análise de despesas e atuações parlamentares.",
+      "description": "Solução backend de transparência pública e inteligência cívica projetada para suportar alto volume de consultas sobre deputados, gastos e votações. Implementa controle de taxa e retries com backoff exponencial contra a API oficial da Câmara dos Deputados, orquestração de processamento assíncrono de despesas em background via filas BullMQ, e cache distribuído em memória com Redis para aceleração drástica de agregações locais no PostgreSQL.",
+      "architecture": "Backend modular construído em NestJS 11 com TypeScript, separando contextos de negócio (camara, deputados, sync). Persistência relacional via PostgreSQL e Prisma ORM. Processamento assíncrono de jobs com BullMQ e Redis (gastos-queue) para desacoplar a ingestão da camada HTTP. Camada de cache com RedisCacheService, documentação interativa Swagger/OpenAPI e testes com Jest. Ambiente 100% conteinerizado via Docker Compose.",
+      "tags": [
+        "NestJS",
+        "TypeScript",
+        "BullMQ",
+        "Redis",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Docker",
+        "Swagger"
+      ],
+      "image": "/vigia-cidadao.jpg",
+      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
+      "demoUrl": "https://github.com/raysantosinsta/api-para-consultar-dados-publicos",
+      "repoUrl": "https://github.com/raysantosinsta/api-para-consultar-dados-publicos",
+      "category": "automacao",
+      "segment": "automacao"
     }
   ]
 }

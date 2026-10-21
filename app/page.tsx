@@ -1,15 +1,11 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { MonitorSmartphone } from "lucide-react";
 import Image from "next/image";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import ImageCarousel from "../components/ImageCarousel";
-import AfterMediaViewer from "../components/AfterMediaViewer";
 import ScrollBackground from "../components/ScrollBackground";
 import ScrollWordReveal from "../components/ScrollWordReveal";
-import VisualStrategyShowcase from "../components/VisualStrategyShowcase";
 
 // Define the project type
 export type Project = {
@@ -33,7 +29,6 @@ export type Project = {
 
 export type CatalogData = {
   criacaoDeSites: Project[];
-  estrategiaVisual: Project[];
   saas: Project[];
 };
 
@@ -43,7 +38,7 @@ export type SubCategoryFilter = {
   segment?: string;
 };
 
-export type TabType = "site" | "social-media" | "saas";
+export type TabType = "site" | "saas";
 
 export const CATEGORY_FILTERS: Record<TabType, SubCategoryFilter[]> = {
   site: [
@@ -51,12 +46,6 @@ export const CATEGORY_FILTERS: Record<TabType, SubCategoryFilter[]> = {
     { id: "clinica-estetica", label: "Clínicas de Estética" },
     { id: "odontologia", label: "Odontologia" },
     { id: "nutricao", label: "Nutrição & Saúde" },
-  ],
-  "social-media": [
-    { id: "all", label: "Todos" },
-    { id: "odontologia", label: "Odontologia" },
-    { id: "ecommerce", label: "Campanhas de E-commerce" },
-    { id: "carrossel", label: "Carrosséis Educativos" },
   ],
   saas: [
     { id: "all", label: "Todos" },
@@ -76,9 +65,7 @@ function resolveQueryParams(params: URLSearchParams) {
   let resolvedCat = "all";
 
   // Tab mapping
-  if (rawTab === "social-media" || rawTab === "estrategia-visual" || rawTab === "visual") {
-    resolvedTab = "social-media";
-  } else if (rawTab === "saas" || rawTab === "sistemas") {
+  if (rawTab === "saas" || rawTab === "sistemas") {
     resolvedTab = "saas";
   } else if (rawTab === "site" || rawTab === "sites") {
     resolvedTab = "site";
@@ -89,9 +76,6 @@ function resolveQueryParams(params: URLSearchParams) {
     if (["odontologia", "clinica-estetica", "estetica", "nutricao", "saude"].includes(cat)) {
       resolvedTab = "site";
       resolvedCat = cat === "estetica" ? "clinica-estetica" : (cat === "saude" ? "nutricao" : cat);
-    } else if (["ecommerce", "carrossel"].includes(cat)) {
-      resolvedTab = "social-media";
-      resolvedCat = cat;
     } else if (["ia", "automacao"].includes(cat)) {
       resolvedTab = "saas";
       resolvedCat = cat;
@@ -152,7 +136,6 @@ function HomeContent() {
 
   const tabProjects: Record<TabType, Project[]> = {
     site: catalogData.criacaoDeSites || [],
-    "social-media": catalogData.estrategiaVisual || [],
     saas: catalogData.saas || [],
   };
 
@@ -163,7 +146,7 @@ function HomeContent() {
     return project.category === selectedCategory || project.segment === selectedCategory;
   });
 
-  const heroText = "Desenvolvedor Full-Stack e Estrategista de Conteúdo Visual & Social Media. Uno tecnologia e estratégias de conversão de alta performance para transformar tráfego em vendas no e-commerce e no comércio físico.";
+  const heroText = "Arquiteto de Software especialista em sistemas distribuídos, microsserviços e Inteligência Artificial. Desenvolvo arquiteturas escaláveis e de alta performance, integrando esteiras agênticas, processamento assíncrono e soluções orientadas a eventos para resolver problemas complexos de engenharia.";
 
   return (
     <main className="min-h-screen text-[var(--foreground)] relative overflow-x-hidden selection:bg-[var(--accent)] selection:text-black">
@@ -180,7 +163,7 @@ function HomeContent() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-medium text-[var(--accent)] tracking-wide mb-4"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
-            Software Engineer & Visual Strategist
+            Software Architect
           </motion.div>
 
           {/* Heading - Tech Minimalista (Inter Bold, tracking-tight) */}
@@ -233,8 +216,7 @@ function HomeContent() {
       <div className="pt-4 px-4 md:px-8 max-w-7xl mx-auto flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-2 p-1 bg-black/40 border border-[var(--border)] rounded-full backdrop-blur-md">
           {[
-            { id: "site", label: "Criação de Sites" },
-            { id: "social-media", label: "Estratégia Visual" },
+            { id: "site", label: "Landing Pages" },
             { id: "saas", label: "Sistemas" }
           ].map((tab) => (
             <button
@@ -297,98 +279,92 @@ function HomeContent() {
       {/* CATALOG CONTENT */}
       <section ref={catalogRef} id="catalogo" className="pt-12 pb-24 px-4 md:px-8 max-w-7xl mx-auto min-h-[60vh] flex flex-col justify-center">
         <AnimatePresence mode="wait">
-          {activeTab === "social-media" ? (
-            <VisualStrategyShowcase
-              projects={displayedProjects}
-              onResetFilter={() => handleCategoryChange("all")}
-            />
+          {displayedProjects.length === 0 ? (
+            <motion.div
+              key="grid-empty"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex flex-col items-center justify-center py-20 text-center"
+            >
+              <p className="text-[var(--muted)] text-base">Nenhum modelo encontrado para esta categoria.</p>
+              <button
+                type="button"
+                onClick={() => handleCategoryChange("all")}
+                className="mt-4 text-xs tracking-wider border border-[var(--border)] px-4 py-2 rounded-full text-white hover:border-white/40 transition-colors"
+              >
+                Ver todos os modelos
+              </button>
+            </motion.div>
           ) : (
-            displayedProjects.length === 0 ? (
-              <motion.div
-                key="grid-empty"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="flex flex-col items-center justify-center py-20 text-center"
-              >
-                <p className="text-[var(--muted)] text-base">Nenhum modelo encontrado para esta categoria.</p>
-                <button
-                  type="button"
-                  onClick={() => handleCategoryChange("all")}
-                  className="mt-4 text-xs tracking-wider border border-[var(--border)] px-4 py-2 rounded-full text-white hover:border-white/40 transition-colors"
+            <motion.div
+              key={`grid-view-${activeTab}-${selectedCategory}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 auto-rows-[350px]"
+            >
+              {displayedProjects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  className={`relative group cursor-pointer overflow-hidden rounded-xl bg-[var(--card)] border border-[var(--border)] ${project.colSpan}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  onClick={() => {
+                    if (project.demoUrl && project.demoUrl !== "#") {
+                      if (project.demoUrl.startsWith("http")) {
+                        window.open(project.demoUrl, "_blank", "noopener,noreferrer");
+                      } else {
+                        window.location.href = project.demoUrl;
+                      }
+                    }
+                  }}
                 >
-                  Ver todos os modelos
-                </button>
-              </motion.div>
-            ) : (
-              <motion.div
-                key={`grid-view-${activeTab}-${selectedCategory}`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.4 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 auto-rows-[350px]"
-              >
-                {displayedProjects.map((project, index) => (
-                  <motion.div
-                    key={project.id}
-                    className={`relative group cursor-pointer overflow-hidden rounded-xl bg-[var(--card)] border border-[var(--border)] ${project.colSpan}`}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                    onClick={() => { if (project.demoUrl && project.demoUrl !== "#") window.location.href = project.demoUrl; }}
-                  >
-                    {/* Visualizer based on Category */}
-                    <>
-                      <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
-                        {(project.gif || project.video) ? (
-                          <img
-                            src={project.gif ?? project.video}
-                            alt={project.title}
-                            className="object-cover object-center w-full h-full"
-                          />
-                        ) : project.image ? (
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 33vw"
-                            className="object-cover object-center"
-                            priority={index === 0}
-                          />
-                        ) : null}
-                      </div>
-
-                      {activeTab === "saas" && (
-                        <div className="absolute top-4 left-4 z-20 flex items-center gap-1.5 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-md border border-white/10 text-white text-xs font-medium tracking-wider">
-                          <MonitorSmartphone size={14} className="text-[var(--accent)]" />
-                          SaaS
-                        </div>
-                      )}
-                    </>
-
-                    {/* Overlay (Hover Effect) */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex flex-col justify-end p-8 pointer-events-none">
-                      <motion.div
-                        initial={{ y: 20, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.4 }}
-                        className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out"
-                      >
-                        <h2 className="text-2xl md:text-3xl font-medium mb-2">{project.title}</h2>
-                        <p className="text-[var(--muted)] text-sm md:text-base mb-6 line-clamp-2">{project.summary}</p>
-                        <div className="flex flex-wrap gap-2">
-                          {project.tags.slice(0, 3).map(tag => (
-                            <span key={tag} className="text-xs tracking-wider border border-[var(--border)] bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-white">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      </motion.div>
+                  {/* Visualizer based on Category */}
+                  <>
+                    <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105">
+                      {(project.gif || project.video) ? (
+                        <img
+                          src={project.gif ?? project.video}
+                          alt={project.title}
+                          className="object-cover object-center w-full h-full"
+                        />
+                      ) : project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 120px) 50vw, 33vw"
+                          className="object-cover object-center"
+                          priority={index === 0}
+                        />
+                      ) : null}
                     </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            )
+                  </>
+
+                  {/* Overlay (Hover Effect) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex flex-col justify-end p-8 pointer-events-none">
+                    <motion.div
+                      initial={{ y: 20, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out"
+                    >
+                      <h2 className="text-2xl md:text-3xl font-medium mb-2">{project.title}</h2>
+                      <p className="text-[var(--muted)] text-sm md:text-base mb-6 line-clamp-2">{project.summary}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.slice(0, 3).map(tag => (
+                          <span key={tag} className="text-xs tracking-wider border border-[var(--border)] bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-white">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
           )}
         </AnimatePresence>
       </section>
