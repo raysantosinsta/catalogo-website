@@ -198,7 +198,7 @@ function HomeContent() {
 
             {/* Imagem configurada para /profile.jpg */}
             <Image
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Highlander Santos"
               fill
               sizes="(max-width: 768px) 100vw, 400px"
