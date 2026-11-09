@@ -297,26 +297,6 @@
       "segment": "ia"
     },
     {
-      "id": "klinik-atendimento-ia",
-      "title": "Klinik IA",
-      "summary": "Micro SaaS de atendimento automatizado e agendamento via WhatsApp com IA.",
-      "description": "Plataforma SaaS multi-tenant voltada para negócios locais (clínicas, salões, etc). Utiliza Inteligência Artificial (RAG) para consultar documentos do estabelecimento e responder dúvidas no WhatsApp, além de realizar agendamentos de forma autônoma e notificar proprietários via Telegram.",
-      "architecture": "Backend construído com NestJS, Prisma e LangChain. Banco PostgreSQL hospedado na Supabase com pgvector para buscas vetoriais. Frontend moderno com Next.js, Tailwind CSS e shadcn/ui. Integrações com OpenAI, Telegram e WhatsApp Cloud API.",
-      "tags": [
-        "NestJS",
-        "Next.js",
-        "PostgreSQL",
-        "OpenAI",
-        "WhatsApp API"
-      ],
-      "image": "/dfdf11.PNG",
-      "colSpan": "col-span-1 md:col-span-2 lg:col-span-2 row-span-1",
-      "demoUrl": "#",
-      "repoUrl": "#",
-      "category": "ia",
-      "segment": "ia"
-    },
-    {
       "id": "scalable-web-scraping-platform",
       "title": "Scalable Web Scraping Platform",
       "summary": "Plataforma distribuída e assíncrona de web scraping para extração de alta performance em SPAs modernas.",
