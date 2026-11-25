@@ -6,6 +6,8 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import ScrollBackground from "../components/ScrollBackground";
 import ScrollWordReveal from "../components/ScrollWordReveal";
+import WhatsAppButton from "../components/WhatsAppButton";
+import Footer from "../components/Footer";
 
 // Define the project type
 export type Project = {
@@ -372,6 +374,12 @@ function HomeContent() {
           )}
         </AnimatePresence>
       </section>
+
+      {/* FOOTER */}
+      <Footer />
+
+      {/* FLOATING WHATSAPP BUTTON */}
+      <WhatsAppButton />
     </main>
   );
 }
