@@ -43,6 +43,7 @@ export type TabType = "site" | "saas";
 export const CATEGORY_FILTERS: Record<TabType, SubCategoryFilter[]> = {
   site: [
     { id: "all", label: "Todos" },
+    { id: "restaurante", label: "Restaurantes" },
     { id: "clinica-estetica", label: "Clínicas de Estética" },
     { id: "odontologia", label: "Odontologia" },
     { id: "nutricao", label: "Nutrição & Saúde" },
@@ -73,7 +74,7 @@ function resolveQueryParams(params: URLSearchParams) {
 
   // Category inference
   if (cat) {
-    if (["odontologia", "clinica-estetica", "estetica", "nutricao", "saude"].includes(cat)) {
+    if (["odontologia", "clinica-estetica", "estetica", "nutricao", "saude", "restaurante", "gastronomia"].includes(cat)) {
       resolvedTab = "site";
       resolvedCat = cat === "estetica" ? "clinica-estetica" : (cat === "saude" ? "nutricao" : cat);
     } else if (["ia", "automacao"].includes(cat)) {
@@ -143,7 +144,10 @@ function HomeContent() {
 
   const displayedProjects = currentTabProjects.filter((project) => {
     if (selectedCategory === "all" || selectedCategory === "todos") return true;
-    return project.category === selectedCategory || project.segment === selectedCategory;
+    const cat = project.category?.toLowerCase();
+    const seg = project.segment?.toLowerCase();
+    const target = selectedCategory.toLowerCase();
+    return cat === target || seg === target;
   });
 
   const heroText = "Arquiteto de Software especialista em sistemas distribuídos, microsserviços e Inteligência Artificial. Desenvolvo arquiteturas escaláveis e de alta performance, integrando esteiras agênticas, processamento assíncrono e soluções orientadas a eventos para resolver problemas complexos de engenharia.";
