@@ -7,20 +7,24 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://highlandersantos.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Highlander Santos | Digital Showroom",
   description: "Software engineering portfolio and digital showroom.",
   openGraph: {
     title: "Highlander Santos – Digital Showroom",
     description: "Explore projetos de arquitetura de software, sistemas distribuídos e inteligência artificial.",
-    url: "https://highlandersantos.com",
+    url: "/",
     siteName: "Highlander Santos",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Highlander Santos showcase",
+        alt: "Highlander Santos - Software Architect & AI Engineer",
+        type: "image/png",
       },
     ],
     locale: "pt_BR",
@@ -28,6 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "Highlander Santos – Digital Showroom",
+    description: "Explore projetos de arquitetura de software, sistemas distribuídos e inteligência artificial.",
+    images: ["/og-image.png"],
     site: "@highlandersantos",
     creator: "@highlandersantos",
   },
